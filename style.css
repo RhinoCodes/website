@@ -1,0 +1,144 @@
+#nav {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    width: calc(100% - 2em);
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+h1, p, h2, a {
+    font-family: 'Inika', serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#name {
+    font-size: 2em;
+}
+
+#description, p, a {
+    font-size: 1.35em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #cdcdcd;
+}
+
+#blog {
+    margin-right: 1em;
+    font-size: 1.5em;
+}
+
+#title {
+    flex-direction: column;
+}
+
+body, html {
+    margin:0;
+    padding: 0;
+    background-color: #000000;
+    text-align: center;
+}
+
+iframe {
+    margin-top: 5em;
+}
+
+#projectsTitle {
+    font-size: 1.75em;
+    text-decoration: underline;
+    margin-top: 3em;
+}
+
+#projects {
+    display: flex;
+    justify-content: space-around;
+    width: fit-content;
+    margin:auto;
+    margin-top:1em;
+}
+
+.project:not(:last-child) {
+    margin-right: 0.75em;
+}
+
+.project {
+    border: rgb(255, 255, 255, 0.1) solid 1px;
+    border-radius: 10px;
+    padding: 0.5em;
+    width: 22.5em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: 200ms all ease-in-out;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 1.35em;
+    margin-bottom: 0.25em;
+}
+
+.body {
+    font-size: 1.15em;
+    height: 4em;
+}
+
+.img {
+    border-radius: 10px;
+}
+
+.hasimg {
+    height: 100%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.text a {
+    font-size: 1.15em;
+    color: #B7B7B7;
+}
+
+.builtwith {
+    color: #7C7C7C;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.project:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+@media only screen and (max-width: 600px) {
+    iframe {
+        width: 100% !important;
+        height: 55vh;
+        margin-top: 0.5em;
+    }
+    #projects {
+        flex-direction: column;
+    }
+    .project:not(:first-child) {
+        margin-top: 1em;
+    }
+
+    .project {
+        margin-right: 0 !important;
+    }
+
+    html,body {
+        overflow-x: hidden;
+    }
+}
